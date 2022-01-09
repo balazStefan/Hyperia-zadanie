@@ -24,10 +24,10 @@
         @click="showHistory"
         @keyup="debounce(loadDataFromApi, 500)"
         @change="debounce(addToLocalStorage, 500)"
-        class="relative"
+        class="mt-3 w-72 p-1 lg:relative lg:w-96 lg:p-2.5"
       />
       <button
-        class="rounded-lg p-1.5 font-bold absolute positionOfbtn"
+        class="mt-4 ml-60 rounded-lg lg:p-1.5 font-bold absolute lg:mt-4 lg:ml-80"
         @click="resetUI"
       >
         Clear
@@ -118,14 +118,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-input {
-  min-width: 384px;
-  padding: 10px;
-}
-
-.positionOfbtn {
-  margin-top: 3px;
-  margin-left: 328px;
-}
-</style>

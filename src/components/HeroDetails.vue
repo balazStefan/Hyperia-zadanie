@@ -1,14 +1,16 @@
 <template>
-  <section class="flex justify-center align-middle my-28">
+  <section class="m-4 my-6 flex justify-center align-middle lg:my-28">
     <base-card>
-      <main class="flex justify-center align-middle">
+      <main class="lg:flex lg:justify-center lg:align-middle">
         <aside>
-          <h1 class="p-2.5 font-bold text-3xl">{{ clickedHero.name }}</h1>
-          <p class="max-w-2xl p-2.5">
+          <h1 class="text-center font-bold text-lg lg:p-2.5 lg:text-3xl">
+            {{ clickedHero.name }}
+          </h1>
+          <p class="w-200 mb-5 lg:max-w-2xl lg:p-2.5 lg:mb-0">
             {{ heroDesc }}
           </p>
-          <div class="p-2.5">
-            <label for="isFavorite" class="cursor-pointer"
+          <div class="lg:p-2.5">
+            <label for="isFavorite" class="cursor-pointer lg:m-0"
               >Is this hero your Favorite ?
             </label>
             <input
@@ -20,12 +22,12 @@
           </div>
           <button
             @click="backHome"
-            class="p-2.5 bg-red-800 font-bold self-start text-white m-3 rounded-lg border-white border-2"
+            class="hidden lg:visible lg:p-2.5 bg-red-800 font-bold lg:self-start text-white m-3 rounded-lg border-white border-2"
           >
             Back Home
           </button>
         </aside>
-        <img :src="getPhoto" alt="" />
+        <img :src="getPhoto" alt="" class="mx-auto mt-3 lg:mx-0 lg:mt-0" />
       </main>
     </base-card>
   </section>

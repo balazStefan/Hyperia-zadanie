@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class>
     <base-dialog
       :show="!!error"
       title="An Error occured..."
@@ -7,7 +7,7 @@
     >
       <p>{{ error }}</p>
     </base-dialog>
-    <ul class="flex justify-evenly align-middle mt-14">
+    <ul class="mt-7 lg:flex lg:justify-evenly lg:align-middle lg:mt-14">
       <hero-preview
         v-for="hero in listOfHeroes"
         :key="hero.id"

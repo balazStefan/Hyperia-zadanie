@@ -1,6 +1,9 @@
 <template>
-  <div class="cursor-pointer" @click="loadPreview">
-    <p class="text-black text-center">
+  <div
+    class="cursor-pointer flex justify-between items-center m-2.5 lg:block"
+    @click="loadPreview"
+  >
+    <p class="text-black lg:text-center">
       {{ name }}
     </p>
     <img :src="photo" />

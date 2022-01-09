@@ -1,5 +1,7 @@
 <template>
-  <div class="card">
+  <div
+    class="lg:shadow-black lg:flex lg:justify-center lg:items-center lg:gap-16 lg:bg-transparent lg:text-white lg:shadow-md lg:border lg:border-black lg:"
+  >
     <slot></slot>
   </div>
 </template>
@@ -7,14 +9,9 @@
 export default {};
 </script>
 <style scoped>
-.card {
-  border-top: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  background-color: transparent;
-  color: whitesmoke;
-  box-shadow: 7px 5px 18px 10px rgba(0, 0, 0, 0.75);
+@media (min-width: 768px) {
+  div {
+    box-shadow: 7px 5px 18px 10px rgba(0, 0, 0, 0.75);
+  }
 }
 </style>

@@ -1,11 +1,14 @@
 <template>
   <div
-    class="hover:bg-gray-300 cursor-pointer flex justify-between w-96 min-w-min"
+    class="w-72 p-1 hover:bg-gray-300 cursor-pointer flex justify-between lg:w-96 lg:min-w-min"
   >
-    <p @click="loadHeroFromHistory" class="font-bolder pr-50 max-w-sm">
+    <p @click="loadHeroFromHistory" class="font-bolder lg:pr-50 lg:max-w-sm">
       {{ query }}
     </p>
-    <button @click="deleteQueryFromHistory" class="text-red-500 font-bold pr-2">
+    <button
+      @click="deleteQueryFromHistory"
+      class="text-red-500 font-bold lg:pr-2"
+    >
       Delete
     </button>
   </div>
@@ -25,7 +28,7 @@ export default {
 };
 </script>
 <style scoped>
-p {
+/* p {
   text-indent: 10px;
-}
+} */
 </style>
